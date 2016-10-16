@@ -1,7 +1,7 @@
-AB Electronics UK RTC Pi Node JS Library
+AB Electronics UK RTC Pi Node.js Library
 =====
 
-Node JS Library to use with RTC Pi Raspberry Pi real-time clock board from https://www.abelectronics.co.uk
+Node.js Library to use with RTC Pi Raspberry Pi real-time clock board from https://www.abelectronics.co.uk
 
 Install
 ====
