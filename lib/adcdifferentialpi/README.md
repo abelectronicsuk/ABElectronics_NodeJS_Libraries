@@ -1,9 +1,9 @@
-AB Electronics UK ADC Differential Pi Node JS Library
-=====
+# AB Electronics UK ADC Differential Pi Node JS Library
 
 Node JS Library to use with ADC Differential Pi Raspberry Pi expansion board from http://www.abelectronics.co.uk
-Install
-====
+
+## Install
+
 To download to your Raspberry Pi type in terminal: 
 
 ```
@@ -20,8 +20,8 @@ Install from https://www.npmjs.com/package/rpio with
 npm install rpio
 ```
 
-Functions:
-----------
+## Functions:
+
 ```
 readVoltage(channel) 
 ```
@@ -61,8 +61,7 @@ Set the conversion mode for the adc
 **Parameters:** mode -  0 = One-shot conversion, 1 = Continuous conversion  
 **Returns:** null
 
-Usage
-====
+## Usage
 
 To use the ADC Differential Pi library in your code you must first import the library:
 ```

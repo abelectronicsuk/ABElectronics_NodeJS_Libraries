@@ -1,10 +1,8 @@
-AB Electronics UK ADCDAC Pi Node JS Library
-=====
+# AB Electronics UK ADCDAC Pi Node JS Library
 
 Node JS Library to use with ADCDAC Pi and ADCDAC Pi Zero Raspberry Pi expansion boards from http://www.abelectronics.co.uk
 
-Install
-====
+## Install
 
 To download to your Raspberry Pi type in terminal: 
 
@@ -24,8 +22,7 @@ Install from https://www.npmjs.com/package/spi with
 npm install spi
 ```
 
-Functions:
-----------
+## Functions:
 
 ```
 readADCVoltage(channel, mode) 
@@ -60,9 +57,18 @@ setDACRaw(channel, value)
 ```
 Set the raw value from the selected channel on the DAC  
 **Parameters:** channel - 1 or 2,value int between 0 and 4095  
-**Returns:** null 
-Usage
-====
+**Returns:** null
+
+```
+setDACGain(gain)
+```
+Set the gain for the DAC.  This is used to set the output based on the reference voltage of 2.048V.    
+When the gain is set to 2 the maximum voltage will be approximately 3.3V.   
+**Parameters:** gain - 1 or 2   
+**Returns:** null   
+
+
+## Usage
 
 To use the ADCDAC Pi library in your code you must first import the library:
 ```

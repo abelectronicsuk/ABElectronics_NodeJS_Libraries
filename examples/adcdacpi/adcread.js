@@ -2,7 +2,7 @@
 // ABElectronics ADCDAC Pi ADC demo
 // Version 1.0 Created 06/07/2016
 // 
-// Requires rpio-spi to be installed, install with: npm install spi
+// Requires rpio to be installed, install with: npm install rpio
 // run with: sudo node adcread.js
 // ================================================
 

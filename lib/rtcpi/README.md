@@ -1,10 +1,8 @@
-AB Electronics UK RTC Pi Node.js Library
-=====
+# AB Electronics UK RTC Pi Node.js Library
 
 Node.js Library to use with RTC Pi Raspberry Pi real-time clock board from https://www.abelectronics.co.uk
 
-Install
-====
+## Install
 
 To download to your Raspberry Pi type in terminal: 
 
@@ -22,8 +20,8 @@ Install from https://www.npmjs.com/package/rpio with
 npm install rpio
 ```
 
-Functions:
-----------
+## Functions:
+
 
 ```
 setDate(date) 
@@ -74,8 +72,7 @@ Read from the memory on the DS1307.  The DS1307 contains 56 - Byte, battery - ba
 **Parameters:** length - Up to 32 bytes. length can not exceed the avaiable address space.    
 **Returns:** Returns a Uint8Array type array of the data read from memory   
 
-Usage
-====
+## Usage
 
 To use the RTC Pi library in your code you must first import the library:
 ```

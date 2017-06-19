@@ -1,10 +1,8 @@
-AB Electronics UK Servo Pi Node.js Library
-=====
+# AB Electronics UK Servo Pi Node.js Library
 
 Node.js Library to use with Servo Pi Raspberry PWM servo control board from https://www.abelectronics.co.uk
 
-Install
-====
+## Install
 
 To download to your Raspberry Pi type in terminal: 
 
@@ -22,8 +20,7 @@ Install from https://www.npmjs.com/package/rpio with
 npm install rpio
 ```
 
-Functions:
-----------
+## Functions:
 
 ```
 setPWMFrequency(freq) 
@@ -84,8 +81,7 @@ Disable the I2C address for the All Call function
 
 
 
-Usage
-====
+## Usage
 
 To use the Servo Pi library in your code you must first import the library:
 ```

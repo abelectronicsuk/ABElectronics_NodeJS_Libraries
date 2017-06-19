@@ -1,15 +1,9 @@
-AB Electronics UK IO Pi Node.js Library
-=====
+# AB Electronics UK IO Pi Node.js Library
+
 
 Node.js Library to use with IO Pi Raspberry Pi expansion board from https://www.abelectronics.co.uk
 
-Install
-====
-To download to your Raspberry Pi type in terminal: 
-
-```
-git clone https://github.com/abelectronicsuk/ABElectronics_Python_Libraries.git
-```
+## Install
 
 To download to your Raspberry Pi type in terminal: 
 
@@ -28,8 +22,7 @@ npm install rpio
 ```
 
 
-Functions:
-----------
+## Functions:
 
 ```
 setPinDirection(pin, direction):
@@ -108,7 +101,6 @@ setInterruptType(port, value)
 Sets the type of interrupt for each pin on the selected port  
 **Parameters:** port 0 = pins 1 to 8, port 1 = pins 9 to 16, value: 1 = interrupt is fired when the pin matches the default value, 0 = the interrupt is fired on state change  
 **Returns:** null
-```
 
 ```
 setInterruptPolarity(value)
@@ -157,8 +149,9 @@ resetInterrupts()
 Set the interrupts A and B to 0  
 **Parameters:** null  
 **Returns:** null
-Usage
-====
+
+## Usage
+
 To use the IO Pi library in your code you must first import the library:
 ```
 var iopi = require('../../lib/iopi/iopi');
