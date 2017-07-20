@@ -1,12 +1,12 @@
-AB Electronics C++ Libraries
+AB Electronics Node.js Libraries
 =====
 
-C++ Class Libraries and demo code to work with Raspberry Pi expansion boards from http://www.abelectronics.co.uk
+Node.js Class Libraries and demo code to work with Raspberry Pi expansion boards from http://www.abelectronics.co.uk
 
 To download to your Raspberry Pi type in terminal: 
 
 ```
-git clone https://github.com/abelectronicsuk/ABElectronics_CPP_Libraries.git
+git clone https://github.com/abelectronicsuk/ABElectronics_NodeJS_Libraries.git
 ```
 
 ### ADCDAC Pi
@@ -29,5 +29,3 @@ This library controls the clock and internal SRAM on the [RTC Pi Plus](https://w
 
 ### Servo Pi
 This library controls the pwm outputs on the [Servo PWM Pi Zero](https://www.abelectronics.co.uk/p/72/Servo-PWM-Pi-Zero "Servo PWM Pi Zero").
-
-We will be adding further C++ demos in the future for our boards.
