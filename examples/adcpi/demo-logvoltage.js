@@ -1,10 +1,12 @@
-﻿//================================================
-// ABElectronics ADC Pi 8-Channel ADC demo
-// Version 1.0 Created 06/07/2016
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// run with: sudo node demo-readvoltage.js
-// ================================================
+﻿/** 
+ * ================================================
+ * ABElectronics ADC Pi 8-Channel ADC logging demo
+ * Version 1.0 Created 06/07/2016
+ * 
+ * Requires rpio to be installed, install with: npm install rpio
+ * run with: sudo node demo-logvoltage.js
+ * ================================================
+*/
 
 // Initialise the ADC device using the default addresses and sample rate,
 // change this value if you have changed the address selection jumpers

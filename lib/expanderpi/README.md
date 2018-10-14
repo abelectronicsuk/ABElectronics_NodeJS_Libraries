@@ -34,14 +34,14 @@ The ExpanderPiADC class controls the MCP3208 12 bit ADC.
 readADCVoltage(channel, mode) 
 ```
 Read the voltage from the selected channel on the ADC  
-**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential
+**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential  
 **Returns:** number as float between 0 and 2.048
 
 ```
 readADCRaw(channel, mode) 
 ```
 Read the raw value from the selected channel on the ADC  
-**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential
+**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential  
 **Returns:** int
 ```
 setADCRefVoltage(voltage)
@@ -160,7 +160,7 @@ Set the internal 100K pull-up resistors for the selected IO port
 writePin(pin, value)
 ```
 Write to an individual pin 1 - 16  
-**Parameters:** pin - 1 to 16, value - 1 = Enabled, 0 = Disabled
+**Parameters:** pin - 1 to 16, value - 1 = Enabled, 0 = Disabled  
 **Returns:** null
 ```
 writePort(self, port, value)

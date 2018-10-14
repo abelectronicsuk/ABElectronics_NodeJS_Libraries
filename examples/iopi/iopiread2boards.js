@@ -1,17 +1,19 @@
-﻿//================================================
-// ABElectronics IO Pi Pin Read demo 2
-// Version 1.0 Created 20/01/2016
-//
-// Requires rpio to be installed, install with: npm install rpio
-// run with: sudo node iopiread2boards.js
-// ================================================
-
-// This example reads the first 8 pins from both busses on two IO Pi boards.  The
-// internal pull- up resistors are enabled so each pin will read as 1 unless
-// the pin is connected to ground.
-
-// Initialise the IOPi devices using the default addresses for board 1 and addresses 0x22 and 0x23 for board 2.
-// You will need to change the addresses if you have changed the jumpers on the IO Pi
+﻿/** 
+* ================================================
+* ABElectronics IO Pi Pin Read demo 2
+* Version 1.0 Created 20/01/2016
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* run with: sudo node iopiread2boards.js
+* ================================================
+* 
+* This example reads the first 8 pins from both busses on two IO Pi boards.  The
+* internal pull- up resistors are enabled so each pin will read as 1 unless
+* the pin is connected to ground.
+* 
+* Initialise the IOPi devices using the default addresses for board 1 and addresses 0x22 and 0x23 for board 2.
+* You will need to change the addresses if you have changed the jumpers on the IO Pi
+*/
 
 var iopi = require('../../lib/iopi/iopi');
 

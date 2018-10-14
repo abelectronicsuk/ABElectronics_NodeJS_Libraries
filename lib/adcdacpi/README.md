@@ -28,22 +28,22 @@ npm install spi
 readADCVoltage(channel, mode) 
 ```
 Read the voltage from the selected channel on the ADC  
-**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential
-**Returns:** number as float between 0 and 2.048
+**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential  
+**Returns:** number as float between 0 and 2.048  
 
 ```
 readADCRaw(channel, mode) 
 ```
 Read the raw value from the selected channel on the ADC  
-**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential
-**Returns:** int
+**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential  
+**Returns:** int  
 ```
 setADCRefVoltage(voltage)
 ```
 Set the reference voltage for the analogue to digital converter.  
 The ADC uses the raspberry pi 3.3V power as a voltage reference so using this method to set the reference to match the exact output voltage from the 3.3V regulator will increase the accuracy of the ADC readings.  
 **Parameters:** voltage - float between 0.0 and 7.0  
-**Returns:** null
+**Returns:** null  
 
 ```
 setDACVoltage(channel, voltage)

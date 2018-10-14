@@ -1,15 +1,17 @@
-﻿//================================================
-// ABElectronics IO Pi Pin Write demo
-// Version 1.0 Created 07/07/2016
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// run with: sudo node iopiwrite.js
-// ================================================
-
-// This example creates a square wave output on pin 1 of bus 1 by switching a pin on and off at 100ms intervals
-
-// Initialise the IOPi device using the default addresses, you will need to
-// change the addresses if you have changed the jumpers on the IO Pi
+﻿/** 
+* ================================================
+* ABElectronics IO Pi Pin Write demo
+* Version 1.0 Created 07/07/2016
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* run with: sudo node iopiwrite.js
+* ================================================
+* 
+* This example creates a square wave output on pin 1 of bus 1 by switching a pin on and off at 100ms intervals
+* 
+* Initialise the IOPi device using the default addresses, you will need to
+* change the addresses if you have changed the jumpers on the IO Pi
+*/
 
 var iopi = require('../../lib/iopi/iopi');
 

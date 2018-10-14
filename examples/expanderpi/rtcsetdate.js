@@ -1,11 +1,13 @@
-﻿//================================================
-// ABElectronics Expander Pi - RTC date demo
-// Version 1.0 Created 19/06/2017
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// 
-// run with: sudo node rtcsetdate.js
-// ================================================
+﻿/** 
+* ================================================
+* ABElectronics Expander Pi - RTC date demo
+* Version 1.0 Created 19/06/2017
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* 
+* run with: sudo node rtcsetdate.js
+* ================================================
+*/
 
 // link to the expanderpi library
 var expanderpi = require('../../lib/expanderpi/expanderpi');

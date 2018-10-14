@@ -1,11 +1,13 @@
-﻿//================================================
-// ABElectronics Expander Pi - ADC Read Demo
-// Version 1.0 Created 19/06/2017
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// 
-// run with: sudo node adcread.js
-// ================================================
+﻿/** 
+* ================================================
+* ABElectronics Expander Pi - ADC Speed Test Demo
+* Version 1.0 Created 19/06/2017
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* 
+* run with: sudo node adcspeedtest.js
+* ================================================
+*/
 
 console.reset = function () {
     return process.stdout.write('\033c');

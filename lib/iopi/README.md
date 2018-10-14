@@ -41,7 +41,7 @@ Sets the IO direction for the specified IO port
 ```
 setPinPullup(pin, value)
 ```
-Set the internal 100K pull-up resistors for an individual pin 
+Set the internal 100K pull-up resistors for an individual pin  
 **Parameters:** pin - 1 to 16, value: 1 = Enabled, 0 = Disabled  
 **Returns:** null
 
@@ -105,9 +105,9 @@ Sets the type of interrupt for each pin on the selected port
 ```
 setInterruptPolarity(value)
 ```
-This sets the polarity of the INT output pins
-**Parameters:** 1 = Active-high, 0 = Active-low
-**Returns:** null
+This sets the polarity of the INT output pins  
+**Parameters:** 1 = Active-high, 0 = Active-low  
+**Returns:** null  
 ```
 
 setInterruptDefaults(port, value)

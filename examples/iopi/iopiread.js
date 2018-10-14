@@ -1,10 +1,12 @@
-﻿//================================================
-// ABElectronics IO Pi Pin Read demo
-// Version 1.0 Created 12/08/2016
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// run with: sudo node iopiread.js
-// ================================================
+﻿/** 
+* ================================================
+* ABElectronics IO Pi Pin Read demo
+* Version 1.0 Created 12/08/2016
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* run with: sudo node iopiread.js
+* ================================================
+*/
 
 // This example reads the first 8 pins of bus 1 on the IO Pi board.  The
 // internal pull- up resistors are enabled so each pin will read as 1 unless

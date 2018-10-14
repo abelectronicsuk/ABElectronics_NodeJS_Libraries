@@ -1,11 +1,13 @@
-﻿//================================================
-// ABElectronics Expander Pi - IO read demo
-// Version 1.0 Created 19/06/2017
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// 
-// run with: sudo node ioread.js
-// ================================================
+﻿/** 
+* ================================================
+* ABElectronics Expander Pi - IO read demo
+* Version 1.0 Created 19/06/2017
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* 
+* run with: sudo node ioread.js
+* ================================================
+*/
 
 // This example reads the first 8 pins on the Exander Pi IO bus.  
 // The internal pull- up resistors are enabled so each pin will read as 1 unless

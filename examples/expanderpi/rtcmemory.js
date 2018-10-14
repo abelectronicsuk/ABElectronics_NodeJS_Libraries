@@ -1,11 +1,13 @@
-﻿//================================================
-// ABElectronics Expander Pi - RTC SRAM memory demo
-// Version 1.0 Created 19/06/2017
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// 
-// run with: sudo node rtcmemory.js
-// ================================================
+﻿/** 
+* ================================================
+* ABElectronics Expander Pi - RTC SRAM memory demo
+* Version 1.0 Created 19/06/2017
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* 
+* run with: sudo node rtcmemory.js
+* ================================================
+*/
 
 intToArray = function (int) {
     // we want to represent the input as a 8-bytes array

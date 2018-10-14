@@ -1,10 +1,12 @@
-﻿//================================================
-// ABElectronics RTC Pi demo
-// Version 1.0 Created 26/07/2016
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// run with: sudo node rtcsetdate.js
-// ================================================
+﻿/** 
+* ================================================
+* ABElectronics RTC Pi demo
+* Version 1.0 Created 26/07/2016
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* run with: sudo node rtcsetdate.js
+* ================================================
+*/
 
 // link to the rtcpi library
 var rtcpi = require('../../lib/rtcpi/rtcpi');

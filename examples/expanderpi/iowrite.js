@@ -1,11 +1,13 @@
-﻿//================================================
-// ABElectronics Expander Pi - IO write demo
-// Version 1.0 Created 19/06/2017
-// 
-// Requires rpio to be installed, install with: npm install rpio
-// 
-// run with: sudo node iowrite.js
-// ================================================
+﻿/** 
+* ================================================
+* ABElectronics Expander Pi - IO write demo
+* Version 1.0 Created 19/06/2017
+* 
+* Requires rpio to be installed, install with: npm install rpio
+* 
+* run with: sudo node iowrite.js
+* ================================================
+*/
 
 // This example creates a square wave output on pin 1 of the IO bus by switching a pin on and off at 100ms intervals
 

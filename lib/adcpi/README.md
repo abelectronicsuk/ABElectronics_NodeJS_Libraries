@@ -26,14 +26,14 @@ npm install rpio
 readVoltage(channel) 
 ```
 Read the voltage from the selected channel  
-**Parameters:** channel - 1 to 8 
+**Parameters:** channel - 1 to 8  
 **Returns:** number between -2.048 and +2.048
 
 ```
 readRaw(channel) 
 ```
 Read the raw int value from the selected channel  
-**Parameters:** channel - 1 to 8 
+**Parameters:** channel - 1 to 8  
 **Returns:** number
 
 ```
