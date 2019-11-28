@@ -18,6 +18,8 @@ The adcdacpi directory contains the library to use with the [ADC DAC Pi](https:/
 The adcpi directory contains the library to use with the [ADC Pi Plus](https://www.abelectronics.co.uk/p/56/ADC-Pi-Plus-Raspberry-Pi-Analogue-to-Digital-converter) and [ADC Pi Zero](https://www.abelectronics.co.uk/p/69/ADC-Pi-Zero-Raspberry-Pi-Analogue-to-Digital-converter) 
 ### ADC Differential Pi
 The adcdifferentialpi directory contains the library to use with the [ADC Differential Pi](https://www.abelectronics.co.uk/p/65/ADC-Differential-Pi-Raspberry-Pi-Analogue-to-Digital-converter)
+### I2C Switch  
+The I2C switch directory contains the library to control the functions of the 4 channel [I2C switch](https://www.abelectronics.co.uk/p/84/i2c-switch "I2C Switch")    
 ### Expander Pi
 The expanderpi directory contains the library to control all of the functions on the [Expander Pi](https://www.abelectronics.co.uk/p/50/Expander-Pi "Expander Pi")
 ### IO Pi
