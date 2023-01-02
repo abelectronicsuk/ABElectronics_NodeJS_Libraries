@@ -1,6 +1,6 @@
 ﻿/** 
 * ================================================
-* ABElectronics Expander Pi - IO write demo
+* AB Electronics UK Expander Pi - IO write demo
 * Version 1.0 Created 19/06/2017
 * 
 * Requires rpio to be installed, install with: npm install rpio

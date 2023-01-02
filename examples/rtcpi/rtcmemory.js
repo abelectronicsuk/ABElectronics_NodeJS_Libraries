@@ -1,6 +1,6 @@
 ﻿/** 
 * ================================================
-* ABElectronics RTC Pi demo
+* AB Electronics UK RTC Pi demo
 * Version 1.0 Created 26/07/2016
 * 
 * Requires rpio to be installed, install with: npm install rpio
@@ -9,7 +9,7 @@
 */
 
 intToArray = function (int) {
-    // we want to represent the input as a 8-bytes array
+    // we want to represent the input as an 8-bytes array
     var array = new Uint8Array([0, 0, 0, 0]);
 
     for (var i = 0; i < array.length; i++) {

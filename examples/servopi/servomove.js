@@ -1,5 +1,5 @@
 /**
-* ABElectronics Servo Pi demo
+* AB Electronics UK Servo Pi demo
 * Version 2.0 Created 04/09/2018
 *
 * Requires rpio to be installed, install with: npm install rpio

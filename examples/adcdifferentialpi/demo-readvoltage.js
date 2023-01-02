@@ -1,6 +1,6 @@
 ﻿/** 
  * ================================================
- * ABElectronics ADC Differential Pi 8-Channel ADC read voltage demo
+ * AB Electronics UK ADC Differential Pi 8-Channel ADC read voltage demo
  * Version 1.0 Created 06/07/2016
  * 
  * Requires rpio to be installed, install with: npm install rpio

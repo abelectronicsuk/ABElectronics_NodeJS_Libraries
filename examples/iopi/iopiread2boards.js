@@ -1,6 +1,6 @@
 ﻿/** 
 * ================================================
-* ABElectronics IO Pi Pin Read demo 2
+* AB Electronics UK IO Pi Pin Read demo 2
 * Version 1.0 Created 20/01/2016
 * 
 * Requires rpio to be installed, install with: npm install rpio
@@ -22,7 +22,7 @@ var bus2 = new IoPi(0x21);
 var bus3 = new IoPi(0x22);
 var bus4 = new IoPi(0x23);
 
-// We will read the inputs 1 to 8 from each bus so set port 0 to be inputs and
+// We will read the inputs 1 to 8 from each bus so set port 0 as inputs and
 // enable the internal pull-up resistors
 
 bus1.setPortDirection(0, 0xFF);

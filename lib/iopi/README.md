@@ -5,7 +5,7 @@ Node.js Library to use with IO Pi Raspberry Pi expansion board from https://www.
 
 ## Install
 
-To download to your Raspberry Pi type in terminal: 
+To download to your Raspberry Pi type in the terminal: 
 
 ```
 git clone https://github.com/abelectronicsuk/ABElectronics_NodeJS_Libraries.git
@@ -230,7 +230,7 @@ ___
 ```
 mirrorInterrupts(value)
 ```
-Sets whether the interrupt pins INT A and INT B are independently connected to each port or internally connected together  
+Sets whether the interrupt pins INT A and INT B are independently connected to each port or internally connected  
 **Parameters:**  
 value: (number) 1 = The INT pins are internally connected, 0 = The INT pins are not connected. INT A is associated with PortA and INT B is associated with PortB    
 **Returns:** null
@@ -271,7 +271,7 @@ ___
 setInterruptDefaults(port, value)
 ```
 These bits set the compare value for pins configured for interrupt-on-change on the selected port.  
-If the associated pin level is the opposite from the register bit, an interrupt occurs.    
+If the associated pin level is the opposite of the register bit, an interrupt occurs.    
 **Parameters:**  
 port: (number) 0 = pins 1 to 8, 1 = pins 9 to 16  
 value: (number) compare value between 0 and 255 or 0x00 and 0xFF.  Each bit in the 8-bit number represents a pin on the port.  
@@ -364,20 +364,20 @@ To use the IO Pi library in your code you must first import the library:
 var iopi = require('../../lib/iopi/iopi');
 ```
 
-Next you must initialise the IO object
+Next, you must initialise the IO object
 
 ```
 var bus1 = new IoPi(0x20);
 ```
 
-We will read the inputs 1 to 8 from bus 1 so set port 0 to be inputs and enable the internal pull-up resistors 
+We will read the inputs 1 to 8 from bus 1 so set port 0 as inputs and enable the internal pull-up resistors 
 
 ```
 bus1.setPortDirection(0, 0xFF);
 bus1.setPortPullups(0, 0xFF);
 ```
 
-You can now read the pin 1 with:
+You can now read pin 1 with:
 ```
 console.log('Pin 1: %d', bus1.readPin(1));
 ```

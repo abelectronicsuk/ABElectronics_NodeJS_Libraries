@@ -4,7 +4,7 @@ Node.js Library to use with RTC Pi Raspberry Pi real-time clock board from https
 
 ## Install
 
-To download to your Raspberry Pi type in terminal: 
+To download to your Raspberry Pi type in the terminal: 
 
 ```
 git clone https://github.com/abelectronicsuk/ABElectronics_NodeJS_Libraries.git
@@ -59,7 +59,7 @@ Set the frequency for the square-wave output on the SQW pin.
 ```
 writeMemory(address, valuearray)
 ```
-Write to the memory on the DS1307.  The DS1307 contains 56 - Byte, battery - backed RAM with Unlimited Writes   
+Write to the memory on the DS1307.  The DS1307 contains 56 - Byte, battery-backed RAM with Unlimited Writes   
 **Parameter:** address - 0x08 to 0x3F    
 **Parameter:** valuearray - byte array (Uint8Array) containing data to be written to memory    
 **Returns:** null   
@@ -67,9 +67,9 @@ Write to the memory on the DS1307.  The DS1307 contains 56 - Byte, battery - bac
 ```
 readMemory(address, valuearray)
 ```
-Read from the memory on the DS1307.  The DS1307 contains 56 - Byte, battery - backed RAM with Unlimited Writes   
+Read from the memory on the DS1307.  The DS1307 contains 56 - Byte, battery-backed RAM with Unlimited Writes   
 **Parameter:** address - 0x08 to 0x3F    
-**Parameter:** length - Up to 32 bytes. length can not exceed the avaiable address space.    
+**Parameter:** length - Up to 32 bytes. length can not exceed the available address space.    
 **Returns:** Returns a Uint8Array type array of the data read from memory   
 
 ## Usage
@@ -79,7 +79,7 @@ To use the RTC Pi library in your code you must first import the library:
 var rtcpi = require('../../lib/rtcpi/rtcpi');
 ```
 
-Next you must create an RTCPi object:
+Next, you must create an RTCPi object:
 
 ```
 var rtc = new RTCPi();
@@ -94,7 +94,7 @@ Enable the square-wave output at 8.192KHz on the SQW pin:
 rtc.set_frequency(3)
 rtc.enable_output()
 ```
-Read the current date and time from the RTC at 1 second intervals:
+Read the current date and time from the RTC at 1-second intervals:
 ```
 var myClock = setInterval(clockTimer, 1000);
 

@@ -6,7 +6,7 @@ Node.js Library to use with Expander Pi Raspberry Pi expansion board from https:
 Install
 ====
 
-To download to your Raspberry Pi type in terminal: 
+To download to your Raspberry Pi type in the terminal: 
 
 ```
 git clone https://github.com/abelectronicsuk/ABElectronics_NodeJS_Libraries.git
@@ -26,7 +26,7 @@ The Expander Pi library is split up into four classes, ADC, DAC, IO and RTC.
 
 # ExpanderPiADC
 
-The ExpanderPiADC class controls the MCP3208 12 bit ADC.
+The ExpanderPiADC class controls the MCP3208 12-bit ADC.
 
 ## Functions
 
@@ -34,14 +34,14 @@ The ExpanderPiADC class controls the MCP3208 12 bit ADC.
 readADCVoltage(channel, mode) 
 ```
 Read the voltage from the selected channel on the ADC  
-**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential  
-**Returns:** number as float between 0 and 2.048
+**Parameters:** channel - 1 or 2; mode - 0 = single-ended, 1 = differential  
+**Returns:** number as a float between 0 and 2.048
 
 ```
 readADCRaw(channel, mode) 
 ```
 Read the raw value from the selected channel on the ADC  
-**Parameters:** channel - 1 or 2; mode - 0 = single ended, 1 = differential  
+**Parameters:** channel - 1 or 2; mode - 0 = single-ended, 1 = differential  
 **Returns:** int
 ```
 setADCRefVoltage(voltage)
@@ -65,14 +65,14 @@ Set the reference voltage.
 ```
 adc.setADCRefVoltage(4.096);
 ```
-Read the voltage from channel 1 and display on the screen
+Read the voltage from channel 1 and display it on the screen
 ```
 console.log('Reading 1 Voltage: ' + adc.readADCVoltage(1, 0));
 ```
 
 # ExpanderPi
 
-The ExpanderPiDAC class controls the MCP4822 12 bit DAC.
+The ExpanderPiDAC class controls the MCP4822 12-bit DAC.
 
 ## Functions
 
@@ -105,7 +105,7 @@ To use the ExpanderPiDAC class in your code you must first import the Expander P
 var expanderpi = require('../../lib/expanderpi/expanderpi');
 ```
 
-Next you must initialise the ExpanderPiDAC object:
+Next, you must initialise the ExpanderPiDAC object:
 ```
 var dac = new ExpanderPiDAC();
 ```
@@ -115,7 +115,7 @@ Set the DAC gain to be 1
 dac.setDACGain(1);
 ```
 
-Set the voltage on channel 1 to be 0.8V and channel 2 to be 1.5V.
+Set the voltage on channel 1 as 0.8V and channel 2 as 1.5V.
 
 ```
 dac.setDACVoltage(1, 0.8);
@@ -124,7 +124,7 @@ dac.setDACVoltage(2, 1.5);
 
 # ExpanderPiIO
 
-The ExpanderPiIO class controls the MCP23017 16 pin I/O controller.
+The ExpanderPiIO class controls the MCP23017 16-pin I/O controller.
 
 ## Functions
 
@@ -166,7 +166,7 @@ Write to an individual pin 1 - 16
 writePort(self, port, value)
 ```
 Write to all pins on the selected port  
-**Parameters:** port - 0 = pins 1 to 8, port 1 = pins 9 to 16, value -  number between 0 and 255 or 0x00 and 0xFF  
+**Parameters:** port - 0 = pins 1 to 8, port 1 = pins 9 to 16, value - number between 0 and 255 or 0x00 and 0xFF  
 **Returns:** null
 ```
 readPin(pin)
@@ -219,7 +219,7 @@ This sets the polarity of the INT output pins
 setInterruptDefaults(port, value)
 ```
 These bits set the compare value for pins configured for interrupt-on-change on the selected port.  
-If the associated pin level is the opposite from the register bit, an interrupt occurs.    
+If the associated pin level is the opposite of the register bit, an interrupt occurs.    
 **Parameters:** port 0 = pins 1 to 8, port 1 = pins 9 to 16, value: compare value  
 **Returns:** null
 ```
@@ -264,20 +264,20 @@ To use the ExpanderPiIO class in your code you must first import the Expander Pi
 var expanderpi = require('../../lib/expanderpi/expanderpi');
 ```
 
-Next you must initialise the ExpanderPiIO object
+Next, you must initialise the ExpanderPiIO object
 
 ```
 var bus = new ExpanderPiIO();
 ```
 
-We will read the inputs 1 to 8 from bus 1 so set port 0 to be inputs and enable the internal pull-up resistors 
+We will read the inputs 1 to 8 from bus 1 so set port 0 as inputs and enable the internal pull-up resistors 
 
 ```
 bus.setPortDirection(0, 0xFF);
 bus.setPortPullups(0, 0xFF);
 ```
 
-You can now read the pin 1 with:
+You can now read pin 1 with:
 ```
 console.log('Pin 1: %d', bus.readPin(1));
 ```
@@ -324,7 +324,7 @@ Set the frequency for the square-wave output on the SQW pin.
 ```
 writeMemory(address, valuearray)
 ```
-Write to the memory on the DS1307.  The DS1307 contains 56 - Byte, battery - backed RAM with Unlimited Writes   
+Write to the memory on the DS1307.  The DS1307 contains 56 - Byte, battery-backed RAM with Unlimited Writes   
 **Parameters:** address - 0x08 to 0x3F    
 **Parameters:** valuearray - byte array (Uint8Array) containing data to be written to memory    
 **Returns:** null   
@@ -332,9 +332,9 @@ Write to the memory on the DS1307.  The DS1307 contains 56 - Byte, battery - bac
 ```
 readMemory(address, valuearray)
 ```
-Read from the memory on the DS1307.  The DS1307 contains 56 - Byte, battery - backed RAM with Unlimited Writes   
+Read from the memory on the DS1307.  The DS1307 contains 56 - Byte, battery-backed RAM with Unlimited Writes   
 **Parameters:** address - 0x08 to 0x3F    
-**Parameters:** length - Up to 32 bytes. length can not exceed the avaiable address space.    
+**Parameters:** length - Up to 32 bytes. length can not exceed the available address space.    
 **Returns:** Returns a Uint8Array type array of the data read from memory   
 
 ## Usage
@@ -344,7 +344,7 @@ To use the ExpanderPiRTC class in your code you must first import the Expander P
 var expanderpi = require('../../lib/expanderpi/expanderpi');
 ```
 
-Next you must create an ExpanderPiRTC object:
+Next, you must create an ExpanderPiRTC object:
 
 ```
 var rtc = new ExpanderPiRTC();
@@ -359,7 +359,7 @@ Enable the square-wave output at 8.192KHz on the SQW pin:
 rtc.set_frequency(3)
 rtc.enable_output()
 ```
-Read the current date and time from the RTC at 1 second intervals:
+Read the current date and time from the RTC at 1-second intervals:
 ```
 var myClock = setInterval(clockTimer, 1000);
 

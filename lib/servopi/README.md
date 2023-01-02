@@ -6,7 +6,7 @@ Node.js Library to use with Servo Pi Raspberry PWM servo control board from http
 
 ## Install
 
-To download to your Raspberry Pi type in terminal: 
+To download to your Raspberry Pi type in the terminal: 
 
 ```
 git clone https://github.com/abelectronicsuk/ABElectronics_NodeJS_Libraries.git
@@ -38,7 +38,7 @@ setPWMFrequency(freq, calibration)
 ```
 Set the PWM frequency  
 **Parameter:** freq - Frequency between 40 and 1000  
-**Parameter:** calibration - Oscillator calibration offset. Use this to adjust for oscillator drift.  Value normally between -10 and 10  
+**Parameter:** calibration - Oscillator calibration offset. Use this to adjust for oscillator drift. Value is normally between -10 and 10  
 **Returns:** null  
 
 ```
@@ -92,14 +92,14 @@ Set the output on all channels
 ```
 outputDisable()
 ```
-Disable the output via OE pin  
+Disable the output via the OE pin  
 **Parameter:** null  
 **Returns:** null  
 
 ```
 outputEnable()
 ```
-Enable the output via OE pin  
+Enable the output via the OE pin  
 **Parameter:** null  
 **Returns:** null  
 
@@ -162,7 +162,7 @@ Next you must initialise the PWM object:
 ```
 var pwm = new PWM(0x40);
 ```
-Set PWM frequency to 60 Hz with a calibration of 0 and enable the output
+Set the PWM frequency to 60 Hz with a calibration value of 0 and enable the output
 ```
 pwm.setPWMFrequency(60, 0);
 pwm.outputEnable();
@@ -212,7 +212,7 @@ Move the servo to a new position
 ```
 getPosition(channel, steps)
 ```
-Get the current position of the servo. Due to rounding errors the returned value may differ from the set value when steps is above 250.  
+Get the current position of the servo. Due to rounding errors, the returned value may differ from the set value when steps is above 250.  
 **Parameter:** channel - 1 to 16  
 **Parameter:** steps - Number of steps.  Typically 250 for an RC servo.  
 **Returns:** current position  
@@ -222,7 +222,7 @@ setLowLimit(low_limit, channel)
 ```
 Set the low limit in milliseconds  
 **Parameter:** low_limit - Typically 1.0 milliseconds. Setting the value too low may damage your servo.  
-**Parameter:** channel - 1 to 16. If channel is omitted or set as 0 the value will be set for all channels.  
+**Parameter:** channel - 1 to 16. If the channel is omitted or set as 0 the value will be set for all channels.  
 **Returns:** null  
 
 ```
@@ -230,7 +230,7 @@ setHighLimit(high_limit, channel)
 ```
 Set the low limit in milliseconds  
 **Parameter:** high_limit - Typically 2.0 milliseconds. Setting the value too high may damage your servo.  
-**Parameter:** channel - 1 to 16. If channel is omitted or set as 0 the value will be set for all channels.  
+**Parameter:** channel - 1 to 16. If the channel is omitted or set as 0 the value will be set for all channels.  
 **Returns:** null  
 
 ```
@@ -238,7 +238,7 @@ setPWMFrequency(freq, calibration)
 ```
 Set the PWM frequency.  For RC servos this should normally be set to 50Hz.  
 **Parameter:** freq - Frequency between 40 and 1000  
-**Parameter:** calibration - Oscillator calibration offset. Use this to adjust for oscillator drift.  Value normally between -10 and 10  
+**Parameter:** calibration - Oscillator calibration offset. Use this to adjust for oscillator drift. Value is normally between -10 and 10  
 **Returns:** null  
 
 ```
@@ -258,7 +258,7 @@ Enable the output via OE pin
 ```
 offsetEnable()
 ```
-Enable pulse offsets. This will set servo pulses to be staggered across the channels to reduce surges in current draw  
+Enable pulse offsets. This will set servo pulses to be staggered across the channels to reduce surges in the current draw  
 **Parameter:** null  
 **Returns:** null  
 
@@ -296,11 +296,11 @@ To use the Servo Pi library in your code you must first import the library:
 ```
 var servopi = require('../../lib/servopi/servopi')
 ```
-Next you must initialise the Servo object.  I2C channel 40, low limit of 1ms, high limit of 2ms and reset enabled.
+Next, you must initialise the Servo object.  I2C channel 40, low limit of 1ms, high limit of 2ms and reset enabled.
 ```
 var servo = new Servo(0x40, 1.0, 2.0, true);
 ```
-Set PWM frequency to 60 Hz with a calibration of 0 and enable the output
+Set the PWM frequency to 60 Hz with a calibration value of 0 and enable the output
 ```
 servo.setPWMFrequency(60, 0);
 servo.outputEnable();

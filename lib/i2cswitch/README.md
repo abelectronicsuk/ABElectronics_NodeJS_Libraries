@@ -1,10 +1,10 @@
 # AB Electronics UK I2C Switch Node.js Library
 
-Node.js Library to use with the 4 channel I2C Switch from https://www.abelectronics.co.uk
+Node.js Library to use with the 4-channel I2C Switch from https://www.abelectronics.co.uk
 
 ## Install
 
-To download to your Raspberry Pi type in terminal: 
+To download to your Raspberry Pi type in the terminal: 
 
 ```
 git clone https://github.com/abelectronicsuk/ABElectronics_NodeJS_Libraries.git
@@ -57,7 +57,7 @@ Get the state of the specified channel
 reset() 
 ```
 Reset the I2C switch.  
-Resetting allows the switch to recover from a situation in which one of the downstream I2C buses is stuck in a low state.  All channels will be set to an off state.  
+Resetting allows the switch to recover from a situation in which one of the downstream I2C buses is stuck in a low state.  All channels will be set to an off-state.  
 **Returns:** null  
 
 ## Usage
@@ -66,7 +66,7 @@ To use the I2C Switch library in your code you must first import the library:
 ```
 var i2cswitch = require('../../lib/i2cswitch/i2cswitch');
 ```
-Next you must initialise the I2CSwitch object:
+Next, you must initialise the I2CSwitch object:
 ```
 var switchobject = new I2CSwitch(0x70);
 ```

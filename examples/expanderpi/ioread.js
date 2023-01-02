@@ -1,6 +1,6 @@
 ﻿/** 
 * ================================================
-* ABElectronics Expander Pi - IO read demo
+* AB Electronics UK Expander Pi - IO read demo
 * Version 1.0 Created 19/06/2017
 * 
 * Requires rpio to be installed, install with: npm install rpio
@@ -10,7 +10,7 @@
 */
 
 // This example reads the first 8 pins on the Exander Pi IO bus.  
-// The internal pull- up resistors are enabled so each pin will read as 1 unless
+// The internal pull-up resistors are enabled so each pin will read as 1 unless
 // the pin is connected to ground.
 
 console.reset = function () { // clear the console screen
@@ -22,7 +22,7 @@ var expanderpi = require('../../lib/expanderpi/expanderpi');
 
 var io = new ExpanderPiIO();
 
-// We will read the inputs 1 to 16 so set port 0 and port 1 to be inputs and
+// We will read the inputs 1 to 16 so set port 0 and port 1 as inputs and
 // enable the internal pull-up resistors
 
 io.setPortDirection(0, 0xFF);

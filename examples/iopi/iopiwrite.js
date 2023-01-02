@@ -1,6 +1,6 @@
 ﻿/** 
 * ================================================
-* ABElectronics IO Pi Pin Write demo
+* AB Electronics UK IO Pi Pin Write demo
 * Version 1.0 Created 07/07/2016
 * 
 * Requires rpio to be installed, install with: npm install rpio
@@ -17,7 +17,7 @@ var iopi = require('../../lib/iopi/iopi');
 
 var bus1 = new IoPi(0x20);
 
-// Set port 0 to be outputs
+// Set port 0 as outputs
 bus1.setPortDirection(0, 0x00);
 
 // Create a timer that runs every 100ms

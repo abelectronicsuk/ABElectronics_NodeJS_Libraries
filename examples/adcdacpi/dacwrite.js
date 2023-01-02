@@ -1,6 +1,6 @@
 ﻿/** 
  * ================================================
- * ABElectronics ADCDAC Pi DAC demo
+ * AB Electronics UK ADC DAC Pi DAC demo
  * Version 1.0 Created 06/07/2016
  * 
  * Requires rpio to be installed, install with: npm install rpio

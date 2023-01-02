@@ -17,7 +17,7 @@ var IOZero32 = require('../../lib/iozero32/iozero32');
 
 var bus1 = new IOZero32(0x20);
 
-// Set port 0 to be outputs
+// Set port 0 as outputs
 bus1.setPortDirection(0, 0x00);
 
 // Create a timer that runs every 100ms

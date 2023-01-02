@@ -5,7 +5,7 @@ Node.js Library to use with IO Zero 32 Raspberry Pi expansion board from https:/
 
 ## Install
 
-To download to your Raspberry Pi type in terminal: 
+To download to your Raspberry Pi type in the terminal: 
 
 ```
 git clone https://github.com/abelectronicsuk/ABElectronics_NodeJS_Libraries.git
@@ -188,7 +188,7 @@ To use the IO Zero 32 library in your code you must first import the library:
 var IOZero32 = require('../../lib/iozero32/iozero32');
 ```
 
-Next you must initialise the IO object
+Next, you must initialise the IOZero32 object
 
 ```
 var bus1 = new IOZero32(0x20);
@@ -200,7 +200,7 @@ We will read the inputs 1 to 8 from bus 1 so set port 0 to be inputs
 bus1.setPortDirection(0, 0xFF);
 ```
 
-You can now read the pin 1 with:
+You can now read pin 1 with:
 ```
 console.log('Pin 1: %d', bus1.readPin(1));
 ```

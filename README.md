@@ -3,7 +3,7 @@ AB Electronics UK Node JS Libraries
 
 Node JS Libraries to work with Raspberry Pi expansion boards from https://www.abelectronics.co.uk
 
-To download to your Raspberry Pi type in terminal: 
+To download to your Raspberry Pi type in the terminal: 
 
 ```
 git clone https://github.com/abelectronicsuk/ABElectronics_NodeJS_Libraries.git
@@ -19,7 +19,7 @@ The adcpi directory contains the library to use with the [ADC Pi](https://www.ab
 ### ADC Differential Pi
 The adcdifferentialpi directory contains the library to use with the [ADC Differential Pi](https://www.abelectronics.co.uk/p/65/adc-differential-pi-raspberry-pi-analogue-to-digital-converter)
 ### I2C Switch  
-The i2cswitch directory contains the library to control the functions of the 4 channel [I2C switch](https://www.abelectronics.co.uk/p/84/i2c-switch "I2C Switch")    
+The i2cswitch directory contains the library to control the functions of the 4-channel [I2C switch](https://www.abelectronics.co.uk/p/84/i2c-switch "I2C Switch")    
 ### Expander Pi
 The expanderpi directory contains the library to control all of the functions on the [Expander Pi](https://www.abelectronics.co.uk/p/50/expander-pi "Expander Pi")
 ### IO Pi

@@ -9,7 +9,7 @@
 */
 
 // This example reads all 32 pins of both bus 1 and 2 on the IO Zero 32 board.
-// Pull-up or pull-down resistors may be required if the inputs are normally in a floating state.
+// Pull-up or pull-down resistors may be required if the inputs are normally left in a floating state.
 
 // Initialise the IOZero32 device using the default addresses, you will need to
 // change the addresses if you have changed the jumpers on the IO Zero 32
@@ -19,7 +19,7 @@ var IOZero32 = require('../../lib/iozero32/iozero32');
 var bus1 = new IOZero32(0x20);
 var bus2 = new IOZero32(0x20);
 
-// We will read the inputs 1 to 16 from bus 1 and 2 so set both busses to be inputs
+// We will read the inputs 1 to 16 from buses 1 and 2 so set both busses to be inputs
 
 bus1.setBusDirection(0xFFFF);
 bus2.setBusDirection(0xFFFF);

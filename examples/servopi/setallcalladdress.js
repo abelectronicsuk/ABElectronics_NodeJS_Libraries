@@ -1,7 +1,7 @@
 /**
  * 
  * 
- * ABElectronics Servo Pi demo
+ * AB Electronics UK Servo Pi demo
  * Version 1.0 Created 29/07/2016
  * 
  * Requires rpio to be installed, install with: npm install rpio
@@ -16,10 +16,10 @@
 // link to the servopi library
 var servopi = require('../../lib/servopi/servopi');
 
-// create an servopi object
+// create a servopi object
 var pwm = new PWM(0x40);
 
-// Set the all call address to 0x30
+// Set the all-call address to 0x30
 pwm.setAllCallAddress(0x30);
 
 // Disable the all call address

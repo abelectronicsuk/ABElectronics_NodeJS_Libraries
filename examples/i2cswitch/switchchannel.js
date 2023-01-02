@@ -1,5 +1,5 @@
 /**
-* ABElectronics I2C Switch demo
+* AB Electronics UK I2C Switch demo
 * Version 1.0 Created 28/11/2019
 *
 * Requires rpio to be installed, install with: npm install rpio
