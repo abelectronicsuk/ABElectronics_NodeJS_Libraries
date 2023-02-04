@@ -3,6 +3,8 @@ AB Electronics UK Expander Pi Node.js Library
 
 Node.js Library to use with Expander Pi Raspberry Pi expansion board from https://www.abelectronics.co.uk
 
+**Note:** Microchip recommends that digital pins 8 (GPA7) and 16 (GPB7) are used as outputs only.  This change was made for revision D MCP23017 chips manufactured after June 2020. See the [MCP23017 datasheet](https://www.abelectronics.co.uk/docs/pdf/microchip-mcp23017.pdf) for more information.
+
 Install
 ====
 
