@@ -2,8 +2,8 @@
 * ================================================
 * AB Electronics UK IO Pi Pin Write demo
 * Version 1.0 Created 07/07/2016
-* 
-* Requires rpio to be installed, install with: npm install rpio
+* Version 1.1 Updated 16/ 03 / 2024
+* Requires i2c-bus to be installed, install with: npm install i2c-bus
 * run with: sudo node iopiwrite.js
 * ================================================
 * 

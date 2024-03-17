@@ -16,11 +16,11 @@ The IO Pi library is located in the /lib/iopi/ directory
 
 The example files are located in the /examples/iopi/ directory
 
-The IO Pi library requires the rpio library to run.
+The IO Pi library requires the i2c-bus library to run.
 
-Install from https://www.npmjs.com/package/rpio with
+Install i2c-bus from https://www.npmjs.com/package/i2c-bus with
 ```
-npm install rpio
+npm install i2c-bus
 ```
 
 Classes:

@@ -2,8 +2,8 @@
 * ================================================
 * AB Electronics UK IO Pi Pin Read demo 2
 * Version 1.0 Created 20/01/2016
-* 
-* Requires rpio to be installed, install with: npm install rpio
+* Version 1.1 Updated 16/ 03 / 2024
+* Requires i2c-bus to be installed, install with: npm install i2c-bus
 * run with: sudo node iopiread2boards.js
 * ================================================
 * 

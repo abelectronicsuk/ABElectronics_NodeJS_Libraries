@@ -3,6 +3,7 @@
 * Version 2.0 Created 04/09/2018
 *
 * Requires rpio to be installed, install with: npm install rpio
+* Requires i2c-bus to be installed, install with: npm install i2c-bus
 * run with: sudo node servomove.js
 * ================================================
 
