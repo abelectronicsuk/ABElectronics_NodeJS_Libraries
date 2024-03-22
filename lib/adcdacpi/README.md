@@ -13,13 +13,11 @@ The ADCDAC Pi library is located in the /lib/adcdacpi/ directory
 
 The example files are located in the /examples/adcdacpi/ directory
 
-The ADC DAC Pi library requires the node-spi library to run.
+The ADC DAC Pi library requires the rpio library to run.
 
-Uses node-spi from https://github.com/RussTheAerialist/node-spi
-Install from https://www.npmjs.com/package/spi with
-
+Install rpio from https://www.npmjs.com/package/rpio with
 ```
-npm install spi
+npm install rpio
 ```
 
 ## Functions:
