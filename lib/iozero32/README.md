@@ -14,11 +14,11 @@ The IO Zero 32 library is located in the /lib/iozero32/ directory
 
 The example files are located in the /examples/iozero32/ directory
 
-The IO Zero 32 library requires the rpio library to run.
+The IO Zero 32 library requires the i2c-bus library to run.
 
-Install from https://www.npmjs.com/package/rpio with
+Install from https://www.npmjs.com/package/i2c-bus with
 ```
-npm install rpio
+npm install i2c-bus
 ```
 
 ___

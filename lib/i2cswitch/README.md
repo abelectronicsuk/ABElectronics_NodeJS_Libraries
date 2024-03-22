@@ -13,9 +13,14 @@ The I2C Switch library is located in the /lib/i2cswitch/ directory
 
 The example files are located in the /examples/i2cswitch/ directory
 
-The I2C Switch library requires the rpio library to run.
+The I2C Switch library requires the i2c-bus and rpio libraries to run.
 
-Install from https://www.npmjs.com/package/rpio with
+Install i2c-bus from https://www.npmjs.com/package/i2c-bus with
+```
+npm install i2c-bus
+```
+
+Install rpio from https://www.npmjs.com/package/rpio with
 ```
 npm install rpio
 ```

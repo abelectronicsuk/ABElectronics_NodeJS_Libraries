@@ -17,11 +17,16 @@ The IO Pi library is located in the /lib/expanderpi/ directory
 
 The example files are located in the /examples/expanderpi/ directory
 
-The Expander Pi library requires the rpio library to run.
+The Expander Pi library requires the rpio and i2c-bus libraries to run.
 
-Install from https://www.npmjs.com/package/rpio with
+Install rpio from https://www.npmjs.com/package/rpio with
 ```
 npm install rpio
+```
+
+Install i2c-bus from https://www.npmjs.com/package/i2c-bus with
+```
+npm install i2c-bus
 ```
 
 The Expander Pi library is split up into four classes, ADC, DAC, IO and RTC.

@@ -2,8 +2,9 @@
 * ================================================
 * AB Electronics UK Expander Pi - RTC SRAM memory demo
 * Version 1.0 Created 19/06/2017
-* 
-* Requires rpio to be installed, install with: npm install rpio
+*
+ * Requires rpio to be installed, install with: npm install rpio
+ * Requires i2c-bus to be installed, install with: npm install i2c-bus
 * 
 * run with: sudo node rtcmemory.js
 * ================================================
@@ -38,18 +39,19 @@ var rtc = new ExpanderPiRTC();
 
 // create a number to save into memory
 
-var a = 12345;
+var a = 123456;
 
 // convert the number into a Uint8Array array
 var bytearray = intToArray(a);
 
+
 // write the array to the RTC memory address 0x08
 
-rtc.writeMemory(0x08, bytearray);
+rtc.writeMemory(0x09, bytearray);
 
 // read the data from memory into an array
 
-var readarray = rtc.readMemory(0x08, bytearray.length);
+var readarray = rtc.readMemory(0x09, bytearray.length);
 
 // convert the array back into a number
 

@@ -2,9 +2,10 @@
 * ================================================
 * AB Electronics UK Expander Pi - ADC Speed Test Demo
 * Version 1.0 Created 19/06/2017
-* 
+*
 * Requires rpio to be installed, install with: npm install rpio
-* 
+* Requires i2c-bus to be installed, install with: npm install i2c-bus
+
 * run with: sudo node adcspeedtest.js
 * ================================================
 */

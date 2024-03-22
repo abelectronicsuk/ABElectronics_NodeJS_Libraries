@@ -3,7 +3,7 @@
 * AB Electronics UK - IO Zero 32 - Pin Read demo
 * Version 1.0 Created 10/05/2022
 * 
-* Requires rpio to be installed, install with: npm install rpio
+* Requires i2c-bus to be installed, install with: npm install i2c-bus
 * run with: sudo node iopiread.js
 * ================================================
 */
@@ -14,10 +14,10 @@
 // Initialise the IOZero32 device using the default addresses, you will need to
 // change the addresses if you have changed the jumpers on the IO Zero 32
 
-var IOZero32 = require('../../lib/iozero32/iozero32');
+const IOZero32 = require('../../lib/iozero32/iozero32');
 
-var bus1 = new IOZero32(0x20);
-var bus2 = new IOZero32(0x20);
+const bus1 = new IOZero32(0x20);
+const bus2 = new IOZero32(0x20);
 
 // We will read the inputs 1 to 16 from buses 1 and 2 so set both busses to be inputs
 
@@ -25,7 +25,7 @@ bus1.setBusDirection(0xFFFF);
 bus2.setBusDirection(0xFFFF);
 
 // create a timer object and read from pins 1 to 8 on the IO bus every 100ms
-var myVar = setInterval(myTimer, 100);
+const myVar = setInterval(myTimer, 100);
 
 function myTimer() {
     console.clear();

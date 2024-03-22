@@ -13,11 +13,11 @@ The ADC Differential Pi library is located in the /lib/adcdifferentialpi/ direct
 
 The example files are located in the /examples/adcdifferentialpi/ directory
 
-The ADC Differential Pi library requires the rpio library to run.
+The ADC Differential Pi library requires the i2c-bus library to run.
 
-Install from https://www.npmjs.com/package/rpio with
+Install from https://www.npmjs.com/package/i2c-bus with
 ```
-npm install rpio
+npm install i2c-bus
 ```
 
 ## Functions:

@@ -2,8 +2,9 @@
 * ================================================
 * AB Electronics UK Expander Pi - RTC date demo
 * Version 1.0 Created 19/06/2017
-* 
-* Requires rpio to be installed, install with: npm install rpio
+*
+ * Requires rpio to be installed, install with: npm install rpio
+ * Requires i2c-bus to be installed, install with: npm install i2c-bus
 * 
 * run with: sudo node rtcsetdate.js
 * ================================================
@@ -16,7 +17,7 @@ var expanderpi = require('../../lib/expanderpi/expanderpi');
 var rtc = new ExpanderPiRTC();
 
 // create a new javascript date object
-var d = new Date(2016, 07, 04, 10, 23, 00, 00);
+var d = new Date(2016, 07, 04, 9, 23, 00, 00);
 
 // set the date on the RTC Pi using the date object
 rtc.setDate(d);

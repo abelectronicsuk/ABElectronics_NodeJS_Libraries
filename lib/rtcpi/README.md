@@ -13,11 +13,11 @@ The RTC Pi library is located in the /lib/rtcpi/ directory
 
 The example files are located in the /examples/rtcpi/ directory
 
-The RTC Pi library requires the rpio library to run.
+The RTC Pi library requires the i2c-bus library to run.
 
-Install from https://www.npmjs.com/package/rpio with
+Install from https://www.npmjs.com/package/i2c-bus with
 ```
-npm install rpio
+npm install i2c-bus
 ```
 
 ## Functions:

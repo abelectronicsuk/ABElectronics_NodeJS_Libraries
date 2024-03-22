@@ -2,8 +2,8 @@
  * ================================================
  * AB Electronics UK ADC Differential Pi 8-Channel ADC logging demo
  * Version 1.0 Created 06/07/2016
- * 
- * Requires rpio to be installed, install with: npm install rpio
+ * Version 1.1 Updated 20/03/2024
+ * Requires i2c-bus to be installed, install with: npm install i2c-bus
  * run with: sudo node demo-logvoltage.js
  * ================================================
 */
