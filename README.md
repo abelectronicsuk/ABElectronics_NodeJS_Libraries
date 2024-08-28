@@ -3,6 +3,8 @@ AB Electronics UK Node JS Libraries
 
 Node JS Libraries to work with Raspberry Pi expansion boards from https://www.abelectronics.co.uk
 
+Raspberry Pi Models: A, B, A+, B+, 2, 3, 4, 400, Compute Module, Zero.
+
 To download to your Raspberry Pi type in the terminal: 
 
 ```
